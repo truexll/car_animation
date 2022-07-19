@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container {
+    height: 400px;
+    width: 400px;
+    background-color: yellow;
+    
+    }
+    .block{
+        width: 80px;
+        height: 80px;
+        background-color: red;
+        animation: my-anitation infinite 4s;
+        position: absolute;
+        left: 0px;
+        top: 0;
+        /* animation-name: my-anitation;
+        animation-duration: 1s;
+        animation-iteration-count: infinite; */
+    }
+    .block2{
+        width: 80px;
+        height: 80px;
+        background-color: red;
+        position: absolute;
+        left: 8px;
+        top: 100px; 
+        animation: my-animation1 2s infinite;
+    }
+    @keyframes my-anitation{
+        0%{
+         top: 0px;
+         left: 0;
+        }
+        25%{
+            left: 320px;
+            top: 0;
+        } 
+        50%{
+            top:320px ;
+            left: 320px;
+        }
+        75%{
+            top: 320px;
+            left:0 ;
+        }
+    }
+    @keyframes my-animation1{
+        0%{
+            left: 80px;
+            top: 80px;
+          
+        }
+        25%{
+            left: 240px;
+            top: 80px;
+        }
+        50%{
+            top: 240px;
+            left: 240px;
+        }
+        75%{
+            top: 240px;
+            left: 80px;
+        }
+        100%{
+            left:80px ;
+            top: 80px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+    <div class="block"></div>
+    <div class="block2"></div>
+</div>
+</body>
+</html>

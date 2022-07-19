@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.box{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-image: url('https://www.pngkey.com/png/detail/314-3143000_28-collection-of-black-car-clipart-png-cartoon.png');
+    background-position: center;
+    background-size: 200px;
+    position: absolute;
+    background-repeat: no-repeat;
+    animation:box 2s infinite  ;
+    border: 2px solid black;
+    
+}
+@keyframes box{
+    0%{
+     top: 0;
+     left: 0;
+    }
+    25%{
+        transform: rotate(10deg);
+   
+    }
+    50%{
+     left:500px ;
+     
+      
+    }
+  100%{
+    transform: rotate(-360deg);
+    left: 0;
+  }
+
+}
+</style>
+
+
+</head>
+<body>
+  <div class="box">
+   
+  </div>    
+</body>
+</html>

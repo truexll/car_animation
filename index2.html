@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+*
+.container{
+    background-color: red;
+    /* animation-duration: 2s; */
+    height: 400px;
+    width: 400px;
+    animation: container 3s infinite;
+    /* border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius:50% ; */
+}
+@keyframes container{
+    0% {
+       border-radius: 50% 0 0 0;
+    }
+    25%{
+        border-radius: 0% 50% 0 0;
+
+
+    }
+    75%{
+        border-radius: 0 0 50% 0;
+       
+        
+        
+    }
+    100%{
+       border-radius: 0 0 0 50%;
+       
+       
+    }
+}
+
+</style>
+
+
+
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="block"></div>
+    </div>
+
+
+
+</body>
+</html>
